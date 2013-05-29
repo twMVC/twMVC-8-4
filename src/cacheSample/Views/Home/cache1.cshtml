@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "cache1";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>現在時間：</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                @(DateTime.Now.ToString())
+            </p>
+        </div>
+    </section>
+}

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "cache2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>現在時間：</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+               
+            </p>
+        </div>
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>現在時間(快取）：</h1>
+                <h2> @Html.Action("cache3")</h2>
+            </hgroup>
+            <p>
+            </p>
+        </div>
+    </section>
+}
